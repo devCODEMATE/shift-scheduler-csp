@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shift Scheduler CSP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Shift Scheduler CSP</h1>
+      <p class="subtitle">
+        A simple project to understand constraint satisfaction problems.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Assign Employees to Shifts</h2>
+
+      <div class="shift-row">
+        <label for="shift1">Morning Shift</label>
+        <select id="shift1">
+          <option value="">Select employee</option>
+          <option value="Ana">Ana</option>
+          <option value="Luis">Luis</option>
+          <option value="Mia">Mia</option>
+        </select>
+      </div>
+
+      <div class="shift-row">
+        <label for="shift2">Afternoon Shift</label>
+        <select id="shift2">
+          <option value="">Select employee</option>
+          <option value="Ana">Ana</option>
+          <option value="Luis">Luis</option>
+          <option value="Mia">Mia</option>
+        </select>
+      </div>
+
+      <div class="shift-row">
+        <label for="shift3">Night Shift</label>
+        <select id="shift3">
+          <option value="">Select employee</option>
+          <option value="Ana">Ana</option>
+          <option value="Luis">Luis</option>
+          <option value="Mia">Mia</option>
+        </select>
+      </div>
+
+        <div class="buttons">
+            <button id="checkBtn">Check Constraints</button>
+            <button id="solveBtn">Auto Solve</button>
+            <button id="resetBtn" class="secondary">Reset</button>
+        </div>
+    </section>
+
+   <section class="card">
+  <h2>CSP Structure</h2>
+  <ul>
+    <li><strong>Variables:</strong> Morning, Afternoon, Night shifts</li>
+    <li><strong>Domain:</strong> Ana, Luis, Mia</li>
+    <li><strong>Constraints:</strong></li>
+    <li>No employee can be assigned to more than one shift</li>
+    <li>Ana cannot work the Night Shift</li>
+  </ul>
+</section>
+
+    <section class="card">
+      <h2>Validation Result</h2>
+      <p id="resultText">Choose employees and check the constraints.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
